@@ -21,11 +21,8 @@ $(".btn").click(function () {
 	playSound(userChosenColour)
 	animatePress(userChosenColour)
 	checkAnswer(userClickedPattern.length - 1)
-
-	//2. Call checkAnswer() after a user has clicked and chosen their answer, passing in the index of the last answer in the user's sequence.
 })
 
-//1. Create a new function called checkAnswer(), it should take one input with the name currentLevel
 function checkAnswer(currentLevel) {
 	if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
 		if (gamePattern.length === userClickedPattern.length) {
