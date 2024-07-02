@@ -51,7 +51,6 @@ function startOver() {
 	started = false
 }
 function nextSequence() {
-	//6. Once nextSequence() is triggered, reset the userClickedPattern to an empty array ready for the next level.
 	userClickedPattern = []
 	level++
 	$("#level-title").text("Level " + level)
